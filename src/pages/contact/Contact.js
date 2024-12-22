@@ -185,7 +185,7 @@ export const Contact = () => {
               className={styles.completeButton}
               data-status={status}
               style={getDelay(tokens.base.durationM)}
-              href="/"
+              href="https://api.whatsapp.com/send?phone=639453629617"
               icon="chevronRight"
             >
               Back to homepage
