@@ -13,7 +13,7 @@ import { Fragment, useState } from 'react';
 import { media } from 'utils/style';
 import styles from './Profile.module.css';
 import myImage from 'assets/nar.jpg';
-import katakana from './katakana.svg';
+
 
 const ProfileText = ({ visible, titleId }) => (
   <Fragment>
@@ -21,10 +21,10 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Lets talk" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I'm Nar, also known as Toast in the MU development community. Are you planning to start your dream private server? I'd love to hear your ideas and discuss how we can bring your vision to life.
+      I&apos;m Nar, also known as Toast in the MU development community. Are you planning to start your dream private server? I&apos;d love to hear your ideas and discuss how we can bring your vision to life.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-    Check out my past clients and feel free to ask them about me. I'm easy to work with and will guide you through every milestone of your server's development. I look forward to being your developer soon!
+    Check out my past clients and feel free to ask them about me. I&apos;m easy to work with and will guide you through every milestone of your server&apos;s development. I look forward to being your developer soon!
     </Text>
   </Fragment>
 );
@@ -80,8 +80,15 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
                   alt="Me Enjoying the waves of Siargao island in the Philippines"
                 />
-                <svg className={styles.svg} data-visible={visible} viewBox="0 0 136 766">
-                  <use href={`${katakana}#katakana-profile`} />
+                <svg
+                  aria-hidden="true"
+                  width="135"
+                  height="765"
+                  viewBox="0 0 135 765"
+                  className={styles.svg}
+                  data-visible={visible}
+                >
+                  {/* <use href={`${profileKatakana}#katakana-profile`} /> */}
                 </svg>
               </div>
             </div>
