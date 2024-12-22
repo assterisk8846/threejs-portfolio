@@ -5,7 +5,8 @@ import gamestackTexturePlaceholder from 'assets/gamestack-login-placeholder.jpg'
 import sliceTexturePlaceholder from 'assets/slice-app-placeholder.jpg';
 
 import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
-
+import muking from 'assets/mukin.jpg';
+import sampleServer from 'assets/server-sample.jpg';
 import hmsPreview from 'assets/hms-preview.png';
 import cicd from 'assets/cicd.png';
 import algoVE from 'assets/algo-ve-preview.png';
@@ -21,7 +22,7 @@ import { ProjectSummary } from 'layouts/Home/ProjectSummary';
 import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.css';
 
-const disciplines = ['Student', 'Learner'];
+const disciplines = ["Private Server", "Lua Scripting", "Configuration", "Premium", "Security"];
 
 export const Home = () => {
   const [visibleSections, setVisibleSections] = useState([]);
@@ -34,7 +35,7 @@ export const Home = () => {
   const details = useRef();
 
   useEffect(() => {
-    const sections = [intro, projectOne, projectTwo, projectThree, projectFour, details];
+    const sections = [intro, projectOne, projectTwo, details];
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -72,9 +73,8 @@ export const Home = () => {
   return (
     <div className={styles.home}>
       <Meta
-        title="Designer + Developer"
-        description="Design portfolio of Mayank Jain — a product designer working on web & mobile
-          apps with a focus on motion, experience design, and accessibility."
+        title="MU Online Developer"
+        description="Design portfolio of John Panotes — DevByToast Company that offers MU Online private server configuration and develperments."
       />
       <Intro
         id="intro"
@@ -87,16 +87,16 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Hostel Management System"
-        description="A platform for students to address all their hostel issues with their hostel warden"
+        title="Servers Designed to Represent Your Vision"
+        description="Customizing Your MU Online Private Server with Professionalism and Attention to Detail for an Extraordinary Gameplay Experience"
         buttonText="View project"
-        buttonLink="https://github.com/mayankjain25/Hostel-Management-System"
+        buttonLink="#"
         model={{
           type: 'laptop',
           alt: 'Displaying the home page of the website.',
           textures: [
             {
-              srcSet: [hmsPreview, hmsPreview],
+              srcSet: [sampleServer, sampleServer],
               placeholder: sprTexturePlaceholder,
             },
           ],
@@ -104,70 +104,26 @@ export const Home = () => {
       />
       <ProjectSummary
         id="project-2"
-        // alternate
+        alternate
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Blockchain Based FIR Registration System"
-        description="A blockchain based FIR registration system to ensure transparency and security of the data to facilitate and safeguard the interests of the victim."
-        buttonText="Visit repository"
-        buttonLink="https://github.com/mayankjain25/Blockchain-Based-FIR-System"
+        title="Fully Customizable Game Events Powered by Lua Scripting"
+        description="Build Dynamic Game Events That Attract Players and Unlock a New Standard of Gameplay"
+        buttonText="View website"
+        buttonLink="#"
         model={{
-          type: 'laptop',
+          type: 'laptop2',
           alt: 'landing page',
           textures: [
             {
-              srcSet: [blockchain],
+              srcSet: [muking],
               placeholder: gamestackTexturePlaceholder,
             },
           ],
         }}
       />
-      <ProjectSummary
-        id="project-3"
-        sectionRef={projectThree}
-        visible={visibleSections.includes(projectThree.current)}
-        index={3}
-        title="CI/CD Pipeline using Jenkins and Docker"
-        description="his is a basic starter website that was built incorporating a CI/CD Pipeline involving GitHub Webhooks and Jenkins. Every push is deployed via an nginx docker container"
-        buttonText="View project"
-        buttonLink="https://github.com/mayankjain25/Microo-Starter-Website"
-        model={{
-          type: 'laptop',
-          alt: 'Visual description of the pipeline workflow',
-          textures: [
-            {
-              srcSet: [cicd],
-              placeholder: sliceTexturePlaceholder,
-            },
-          ],
-        }}
-      />
-      <ProjectSummary
-        id="project-4"
-        alternate
-        sectionRef={projectFour}
-        visible={visibleSections.includes(projectFour.current)}
-        index={4}
-        title="Stocks Dashboard"
-        description="A dashboard to display some of the top performing stocks in the Indian market"
-        buttonText="View website"
-        buttonLink="http://stock-dashboard.kiitians.com/"
-        model={{
-          type: 'phone',
-          alt: 'App login screen',
-          textures: [
-            {
-              srcSet: [stockDash],
-              placeholder: gamestackTexturePlaceholder,
-            },
-            {
-              srcSet: [stockDash2],
-              placeholder: gamestackTexture2Placeholder,
-            },
-          ],
-        }}
-      />
+      
       <Profile
         sectionRef={details}
         visible={visibleSections.includes(details.current)}

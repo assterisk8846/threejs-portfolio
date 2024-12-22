@@ -21,4 +21,12 @@ export const deviceModels = {
     position: { x: 0, y: 0, z: 0 },
     animation: ModelAnimationType.LaptopOpen,
   },
+
+  laptop2: {
+    url: macbookPro,
+    width: 1280,
+    height: 800,
+    position: { x: 0, y: 0, z: 0 },
+    animation: ModelAnimationType.LaptopOpen,
+  },
 };

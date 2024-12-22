@@ -2,8 +2,8 @@ import { pxToRem } from 'utils/style';
 
 // Full list of tokens
 const baseTokens = {
-  rgbBlack: '0 0 0',
-  rgbWhite: '255 255 255',
+  black: 'oklch(0% 0 0)',
+  white: 'oklch(100% 0 0)',
   bezierFastoutSlowin: 'cubic-bezier(0.4, 0.0, 0.2, 1)',
   durationXS: '200ms',
   durationS: '300ms',
@@ -16,7 +16,7 @@ const baseTokens = {
   monoFontStack:
     'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace',
   japaneseFontStack:
-    'ヒラギノ角ゴ Pro W3, Hiragino Kaku Gothic Pro, Hiragino Sans, Osaka, メイリオ, Meiryo, Segoe UI, sans-serif',
+    'IPA Gothic, ヒラギノ角ゴ Pro W3, Hiragino Kaku Gothic Pro, Hiragino Sans, Osaka, メイリオ, Meiryo, Segoe UI, sans-serif',
   fontWeightRegular: 400,
   fontWeightMedium: 500,
   fontWeightBold: 700,
@@ -111,8 +111,8 @@ const dark = {
   themeId: 'dark',
   rgbBackground: '17 17 17',
   rgbBackgroundLight: '26 26 26',
-  rgbPrimary: '0 229 255',
-  rgbAccent: '0 229 255',
+  rgbPrimary: '243, 200, 0',
+  rgbAccent: '243, 200, 0',
   rgbText: '255 255 255',
   rgbError: '255 55 102',
   colorTextTitle: 'rgb(var(--rgbText) / 1)',
@@ -125,7 +125,7 @@ const light = {
   rgbBackground: '242 242 242',
   rgbBackgroundLight: '255 255 255',
   rgbPrimary: '0 0 0',
-  rgbAccent: '0 229 255',
+  rgbAccent: '243, 200, 0',
   rgbText: '0 0 0',
   rgbError: '255 0 60',
   colorTextTitle: 'rgb(var(--rgbText) / 1)',
