@@ -1,8 +1,8 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "Portfolio site for Mayank Jain",
-  "author": "Mayank Jain <jainmayank2509@gmail.com>",
+  "description": "MU Development",
+  "author": "John Panotes",
   "devDependencies": {
     "@mapbox/rehype-prism": "^0.8.0",
     "@storybook/addon-a11y": "^6.5.10",
@@ -59,7 +59,7 @@
     "deploy": "aws s3 sync --delete build/ s3://hamish-portfolio-site",
     "deploy:storybook": "aws s3 sync --delete build-storybook s3://hamish-portfolio-storybook",
     "deploy:functions": "cd functions && npm run deploy",
-    "start": "next start",
+    "start": "NODE_ENV=production node server.js",
     "test": "echo 'write some tests'",
     "storybook": "start-storybook -p 9009 -h localhost"
   },

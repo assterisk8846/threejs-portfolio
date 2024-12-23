@@ -1,8 +1,8 @@
 import Head from 'next/head';
 
 const siteUrl = process.env.NEXT_PUBLIC_WEBSITE_URL;
-const name = 'Mayank Jain';
-const twitterHandle = '@hamishMW';
+const name = 'John Panotes';
+const twitterHandle = '@narbrv';
 const defaultOgImage = `https://i.postimg.cc/DwK1GXqN/site-preview.png`;
 
 export const Meta = ({ title, description, prefix = name, ogImage = defaultOgImage }) => {
@@ -10,7 +10,7 @@ export const Meta = ({ title, description, prefix = name, ogImage = defaultOgIma
 
   return (
     <Head>
-      <title key="title">Mayank Jain - Portfolio</title>
+      <title key="title">Toast | MU Development</title>
       <meta key="description" name="description" content={description} />
       <meta name="author" content={name} />
 

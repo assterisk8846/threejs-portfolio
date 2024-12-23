@@ -1,9 +1,9 @@
 {
-  "short_name": "Mayank Jain",
-  "name": "Design Portfolio of Mayank Jain",
+  "short_name": "Toast",
+  "name": "Design Portfolio of Toast",
   "icons": [
     {
-      "src": "favicon.png",
+      "src": "favicon.ico",
       "sizes": "64x64",
       "type": "image/png"
     },

@@ -19,8 +19,8 @@ export const navLinks = [
 
 export const socialLinks = [
   {
-    label: 'Github',
-    url: 'https://github.com/mayankjain25',
+    label: 'WhatsApp',
+    url: 'https://wa.me/9453629617',
     icon: 'github',
   },
 ];

@@ -13,12 +13,13 @@ import { Fragment, useState } from 'react';
 import { media } from 'utils/style';
 import styles from './Profile.module.css';
 import myImage from 'assets/nar.jpg';
+import profileKatakana from 'assets/katakana-profile.svg?url';
 
 
 const ProfileText = ({ visible, titleId }) => (
   <Fragment>
     <Heading className={styles.title} data-visible={visible} level={3} id={titleId}>
-      <DecoderText text="Lets talk" start={visible} delay={500} />
+      <DecoderText text="Let's talk" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       I&apos;m Nar, also known as Toast in the MU development community. Are you planning to start your dream private server? I&apos;d love to hear your ideas and discuss how we can bring your vision to life.
@@ -88,7 +89,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   className={styles.svg}
                   data-visible={visible}
                 >
-                  {/* <use href={`${profileKatakana}#katakana-profile`} /> */}
+                  {<use href={`${profileKatakana}#katakana-profile`} />}
                 </svg>
               </div>
             </div>

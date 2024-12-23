@@ -8,7 +8,7 @@ import Close from './svg/close.svg';
 import Copy from './svg/copy.svg';
 import Error from './svg/error.svg';
 import Figma from './svg/figma.svg';
-import Github from './svg/github.svg';
+import Github from './svg/whatsApp.svg';
 import Link from './svg/link.svg';
 import Menu from './svg/menu.svg';
 import Pause from './svg/pause.svg';
